@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: manage-service
+    name: manage-servcie
   cloud:
     zookeeper:
       connect-string: 192.168.11.132:2181

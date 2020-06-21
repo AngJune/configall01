@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: cart-service
+    name: cart-servcie
   cloud:
     zookeeper:
       connect-string: 192.168.11.132:2181

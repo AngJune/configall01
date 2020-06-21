@@ -2,7 +2,7 @@ server:
   port: 8082
 spring:
   application:
-    name: user-service
+    name: user-servcie
   cloud:
     zookeeper:
       connect-string: 192.168.11.132:2181
