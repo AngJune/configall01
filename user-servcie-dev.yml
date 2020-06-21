@@ -42,6 +42,8 @@ dubbo:
     name: dubbo
     port: 20883
 management:
+  security:
+    enabled: false
   endpoints:
     web:
       exposure:

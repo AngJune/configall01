@@ -43,6 +43,8 @@ dubbo:
     port: 20885
 
 management:
+  security:
+    enabled: false
   endpoints:
     web:
       exposure:

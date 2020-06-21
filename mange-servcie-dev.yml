@@ -50,6 +50,8 @@ async-thread-pool:
   queueCapacity: 1000
 
 management:
+  security:
+    enabled: false
   endpoints:
     web:
       exposure:
