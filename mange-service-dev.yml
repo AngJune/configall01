@@ -3,11 +3,6 @@ server:
 spring:
   application:
     name: mange-service
-  rabbitmq:
-    host: 192.168.11.132
-    port: 5672
-    username: admin
-    password: admin
   cloud:
     zookeeper:
       connect-string: 192.168.11.131:2181,192.168.11.131:2182,192.168.11.131:2183
@@ -21,7 +16,11 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
     password: root
-
+  rabbitmq:
+    host: 192.168.11.132
+    port: 5672
+    username: admin
+    password: admin
 mybatis-plus:
   type-aliases-package: com.cy.pojo #持久层的数据对象包名路径
   mapper-locations: classpath:/mybatis/mappers/*.xml #识别sql的xml文件
