@@ -1,8 +1,8 @@
 server:
-  port: 8083
+  port: 8082
 spring:
   application:
-    name: mange-servcie
+    name: user-service
   cloud:
     zookeeper:
       connect-string: 192.168.11.131:2181,192.168.11.131:2182,192.168.11.131:2183
@@ -35,20 +35,12 @@ dubbo:
   scan:
     basePackages: com.cy
   application:
-    name: provider-manage
+    name: provider-user
   registry:
     address: zookeeper://192.168.11.131:2181?backup=192.168.11.131:2182,192.168.11.131:2183
   protocol:
     name: dubbo
-    port: 20882
-
-#开启异步线程配置 不使用呢tomcat线程 提高系统性能
-async-thread-pool:
-  corePoolSize: 20
-  maxPoolSize: 1000
-  keepAliveSeconds: 30
-  queueCapacity: 1000
-
+    port: 20883
 management:
   security:
     enabled: false
