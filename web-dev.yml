@@ -3,7 +3,7 @@ spring:
     name: web
   cloud:
     zookeeper:
-      connect-string: 192.168.11.131:2181,192.168.11.131:2182,192.168.11.131:2183
+      connect-string: 192.168.117.99:2585,192.168.117.99:2686,192.168.117.99:2787
       discovery:
         enabled: true
         register: true
@@ -25,7 +25,7 @@ dubbo:
   application:
     name: consumer-web
   registry:
-    address: zookeeper://192.168.11.131:2181?backup=192.168.11.131:2182,192.168.11.131:2183
+    address: zookeeper://192.168.117.99:2585?backup=192.168.117.99:2686,192.168.117.99:2787
 
 management:
   security:
